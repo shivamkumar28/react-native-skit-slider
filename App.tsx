@@ -1,5 +1,6 @@
 /**
  * React Native Custom Slider
+ * Date - 20 Nov 2023
  * @format
  */
 
