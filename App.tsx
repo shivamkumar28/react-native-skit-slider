@@ -8,6 +8,8 @@ import React from 'react';
 import {
   SafeAreaView,
   StatusBar,
+  StyleSheet,
+  View,
   useColorScheme,
 } from 'react-native';
 
@@ -31,9 +33,18 @@ function App(): JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
+      <View style={styles.container}>
       <CustomSlider/>
+      </View>
     </SafeAreaView>
   );
 }
 
 export default App;
+
+const styles=StyleSheet.create({
+  container:{
+    flex:1,
+    backgroundColor:'lightpink'
+  }
+})
